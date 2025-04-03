@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-react": "^0.487.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-router": "^7.3.0"
   },

@@ -1,9 +1,10 @@
 import { useParams } from 'react-router';
+import { Helmet } from "react-helmet-async"
 import _ from 'lodash';
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import ProductList from "../components/ProductList";
-import products from "../json/products.json";
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import ProductList from "@/components/ProductList";
+import products from "@/json/products.json";
 
 function Category() {
   const { categoryName } = useParams();
