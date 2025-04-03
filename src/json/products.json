@@ -17,7 +17,8 @@
      "price": 20,
      "stock": 60,
      "cover": "/images/book2.png",
-     "category": "Society"
+     "category": "Society",
+     "countInStock": 10
  },
  {
      "ID": 3,
@@ -27,7 +28,8 @@
      "price": 18,
      "stock": 34,
      "cover": "/images/book3.png",
-     "category": "Dystopia"
+     "category": "Dystopia",
+     "countInStock": 10
  },
  {
      "ID": 4,
@@ -37,7 +39,8 @@
      "price": 25,
      "stock": 50,
      "cover": "/images/book4.png",
-     "category": "Classics"
+     "category": "Classics",
+     "countInStock": 10
  },
  {
      "ID": 5,
@@ -47,7 +50,8 @@
      "price": 30,
      "stock": 40,
      "cover": "/images/book5.png",
-     "category": "Classics"
+     "category": "Classics",
+     "countInStock": 10
  },
  {
      "ID": 6,
@@ -57,6 +61,7 @@
      "price": 22,
      "stock": 55,
      "cover": "/images/book6.png",
-     "category": "Growth"
+     "category": "Growth",
+     "countInStock": 10
  }
 ]
