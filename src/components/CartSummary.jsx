@@ -19,7 +19,7 @@ function CartSummary() {
             className="inline-block absolute top-6 right-2 md:right-6 cursor-pointer"
          >
             <div className="indicator">
-               {count > 0 && <span className="indicator-item badge badge-primary text-white">{count}</span>}
+               {count > 0 && <span className="indicator-item badge badge-primary text-white">{Number(count)}</span>}
                <ShoppingBasket strokeWidth={1.5} className="w-5 h-5 md:w-6 md:h-6 text-current group-hover:scale-105 transition-transform" />
             </div>
             <p className="text-xs opacity-60 mt-[-4px]">Shopping bag</p>
