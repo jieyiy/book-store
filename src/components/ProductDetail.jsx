@@ -28,16 +28,16 @@ function ProductDetail({ product }) {
            <p className="text-2xl font-semibold">stock：{product.stock}</p>
 
            <p>
-            <span className="font-bold" >Status</span>: {product.countInStock > 0 ? "In Stock" : "Unavailable."}
+            <span className="font-bold" >Status</span>: {product.stock > 0 ? "In Stock" : "Unavailable."}
           </p>
           <div className="flex items-center gap-2">
             <span className="font-bold" >Qty:</span>
             <select
               className="select select-bordered w-20 bg-[#ffffff] text-black"
-              defaultValue={product.countInStock > 0 ? 1 : 0}
+              defaultValue={product.stock > 0 ? 1 : 0}
               onChange={ event => setQty(event.target.value)}
             >
-              {[ ...Array(product.countInStock).keys()].map((x) => (
+              {[ ...Array(product.stock).keys()].map((x) => (
                 <option key={x + 1} value={x + 1}>
                   {x + 1}
                 </option>
@@ -48,7 +48,7 @@ function ProductDetail({ product }) {
             <span className="font-bold">Total Price</span>: {product.price * qty}
           </p>
 
-           <AddToCart />
+          <AddToCart  product={product} qty={qty} />
          </div>
        </div>
      </div>
