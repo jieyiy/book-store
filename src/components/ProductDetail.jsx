@@ -3,7 +3,7 @@ import AddToCart from "./AddToCart"
 
 function ProductDetail({ product }) {
 
-  const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+  const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
 
    return (
      <div className="grid grid-cols-1 lg:grid-cols-24 gap-8 justify-center">

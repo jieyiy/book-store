@@ -8,7 +8,7 @@ function CartSummary() {
    const [isOpen, setIsOpen] = useState(false);
    const cartItems = useSelector(selectCartItems);
    const count = (cartItems.length > 0) ?
-      cartItems.reduce((sum, item) => sum + item.qty, 0)
+      cartItems.reduce((sum, item) => sum + Number(item.qty), 0)
       : 0;
    const toggleOpen = () => setIsOpen(!isOpen);
 
